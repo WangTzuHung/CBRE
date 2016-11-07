@@ -9,7 +9,7 @@ class PostsController < ApplicationController
   def create
     post = Post.new(post_params)
     if post.save!
-      render :final
+      redirect_to final_path
     else
       render :index
     end
@@ -23,7 +23,7 @@ class PostsController < ApplicationController
 
   private
 
-  def post_paramsname
+  def post_params
     params.require(:post).permit(:gender, :echelon, :age,:favorite,:mobile,:email)
   end
 end
