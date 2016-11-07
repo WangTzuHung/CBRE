@@ -9,9 +9,10 @@
 //
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
-//
-//= require jquery
-//= require jquery_ujs
-//= require bootstrap
-//= require turbolinks
-//= require_tree .
+
+//= require ./modernizr-2.6.1-respond-1.1.0.min.js
+//= require ./bootstrap.js
+//= require ./main.js
+//= require ./jquery.gmap3.min.js
+//= require ./plugins.js
+//= require ./index.js

@@ -1,0 +1,129 @@
+<div class="site-main" id="sTop">
+        <div class="site-header">
+            <div class="main-header">
+                <div class="container">
+                    <div id="menu-wrapper">
+                        <div class="row">
+                            <div class="logo-wrapper col-md-4 col-sm-3 col-xs-8">
+                                <h1> <%= link_to 'AXIS', controller: "posts", action: "index" %> </h1>
+                            </div>
+                            <!-- /.logo-wrapper -->
+                            <div class="col-md-8 col-sm-9 col-xs-4 main-menu text-right">
+                                <ul class="menu-first hidden-sm hidden-xs">
+                                    <li class="active"><%= link_to '首頁', controller: "posts", action: "index" %></li>
+                                    <li><%= link_to '線上報名', controller: "posts", action: "index", anchor: "services" %></li>
+                                    <li><%= link_to '物件特色', controller: "posts", action: "case" %></li>
+                                    <li><%= link_to '執行單位', controller: "posts", action: "cbre" %></li>
+                                </ul>
+                                <a href="#" class="toggle-menu visible-sm visible-xs"><i class="fa fa-bars"></i></a> </div>
+                            <!-- /.main-menu -->
+                        </div>
+                        <!-- /.row -->
+                    </div>
+                    <!-- /#menu-wrapper -->
+                    <div class="menu-responsive hidden-md hidden-lg">
+                        <ul>
+                            <li class="active"><%= link_to '首頁', controller: "posts", action: "index" %></li>
+                            <li><%= link_to '線上報名', controller: "posts", action: "index", anchor: "services" %></li>
+                            <li><%= link_to '物件特色', controller: "posts", action: "case" %></li>
+                            <li><%= link_to '執行單位', controller: "posts", action: "cbre" %></li>
+                        </ul>
+                    </div>
+                    <!-- /.menu-responsive -->
+                </div>
+                <!-- /.container -->
+            </div>
+            <!-- /.main-header -->
+        </div>
+        <!-- /.site-header -->
+        <div class="site-slider">
+            <div class="slider">
+                <div class="flexslider">
+                    <ul class="slides">
+                        <li>
+                            <div class="overlay"></div>
+                            <%= image_tag("Axis_PES_cam_1_01.jpg") %>
+                            <div class="slider-caption visible-md visible-lg">
+                                <h2>The Vincent</h2>
+								              <div style="margin-top:25px; width:600px; margin-left:auto; margin-right:auto; border-bottom:0px;">
+
+                                  <%= image_tag("logo1.png", class: "img-responsive", draggable: "false",height:"144") %>
+                                  <br>
+
+
+                                </div>
+                                
+                                <!-- <a href="#" class="slider-btn">Responsive Template</a> -->
+                                
+                            </div>
+                            <div class="slider-caption visible-md visible-lg">
+                                <h2></h2>
+                                <!-- <a href="#" class="slider-btn">Responsive Template</a> -->
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.flexslider -->
+            </div>
+            <!-- /.slider -->
+        </div>
+        <!-- /.site-slider -->
+    </div>
+    <!-- /.site-main -->
+    <div class="content-section" id="services">
+        <div class="container">
+            <div class="row">
+                <div class="heading-section col-md-12 text-center">
+                    <h2>The Vincent </h2>
+                    <p>About The Vincent</p>
+                </div>
+                <!-- /.heading-section -->
+                <div class="col-md-4 col-sm-12 text-left">
+                   <%= image_tag("spring logo.png", class: "img-responsive") %>
+                </div>
+                <div class="col-md-8 col-sm-12 text-left">
+                    <ul>
+                      <li><br>
+                      母公司為ONYX Hospitality  Group，經營飯店業務超過四十五年，集團旗下有Saffron、Amari、OZO等數個品牌，直至今天，ONYX的經營範圍已經覆蓋南亞地區，  並遍及印度洋、波斯灣、亞太等地區。 </li>
+                      <li>2001年，莎瑪品牌正式成立，在香港各主要商業及住宅地段推出精品酒店式公寓，自此成為香港市場的領導者。 </li>
+                      <li>2006年，摩根士丹利房地產大量購入莎瑪股份，與基匯資本連手成為第二大股東。在合作夥伴充足資源的支持下，莎瑪計劃更積極擴張服務網絡，銳意發展成為全亞洲第一的品牌。 </li>
+                      <li>現在，莎瑪酒店式公寓在香港、中國及泰國已有10個項目，莎瑪將會繼續拓展在亞洲其他各主要城市發展項目。 </li>
+                    </ul>
+                    <p><!-- spacing for mobile viewing -->
+                    </p>
+                </div>
+                <!-- /.col-md-8 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /#services -->
+   
+    <!-- /#contact -->
+    <div id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-xs-12 text-left">
+                    <a href="https://www.facebook.com/cbre" target="_blank">facebook</a> |
+                    <a href="http://www.cbre.com.tw/CT/Pages/Home.aspx?redirect=true" target="_blank">CBRE</a> |
+                    <a href="http://www.shama.com/" target="_blank">SHAMA </a> |
+                    <a href="http://www.cbre.com/EN/Pages/legal/disclaimer.aspx" target="_blank">免責聲明 / 使用條款</a> |
+                    <a href="http://www.cbre.com/EN/Pages/legal/privacypolicy.aspx" target="_blank">私隱保護條例</a> |
+                    <a href="http://www.cbre.com.tw/CT/Pages/taiwanprivacypolicy.aspx" target="_blank">台灣隱私政策聲明</a> |
+                    <a href="http://www.cbre.com.tw/CT/Pages/TW_PDPA.aspx" target="_blank">台灣個資維護計畫</a>
+                     <p><span>©2016世邦魏理仕公司。本報告所刊載的資料相信是來自可靠來源，但本公司並未對此資料進行核實，亦不會對資料作出任何保證或陳述。廣告內容有可能會出現錯誤、遺漏、貨價格租金便棟及其他狀況，還有在事前未經通知的銷售、出租、融資或撤回。所有刊載的預測、意見、假設或估計只作例子說明，並不一定代表地產市場的真正現況或未來表現。閣下與閣下之稅務及法律顧問須親自對該物業及交易作出審查。不動產經紀人:陳頌民北市經證字第00917</span></p>
+                </div>
+      <!-- /.text-center -->
+      <div class="col-md-4 hidden-xs text-right"> <a href="#top" id="go-top">TOP</a> </div>
+      <!-- /.text-center --> 
+    </div>
+    <!-- /.row --> 
+  </div>
+  <!-- /.container --> 
+</div>
+<!-- /#footer --> 
+    <!-- 
+Flex Template 
+http://www.templatemo.com/preview/templatemo_406_flex 
+-->

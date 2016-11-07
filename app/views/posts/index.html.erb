@@ -1,0 +1,300 @@
+<div class="site-main" id="sTop">
+  <div class="site-header">
+    <div class="main-header">
+      <div class="container">
+        <div id="menu-wrapper">
+          <div class="row">
+            <div class="logo-wrapper col-md-4 col-sm-3 col-xs-8">
+              <h1><%= link_to 'SHAMA', controller: "posts", action: "index" %> </h1>
+            </div>
+            <!-- /.logo-wrapper -->
+            <div class="col-md-8 col-sm-9 col-xs-4 main-menu text-right">
+              <ul class="menu-first hidden-sm hidden-xs">
+                <li class="active"><%= link_to '首頁', controller: "posts", action: "index" %></li>
+                <li><a href="#services">線上報名</a></li>
+                <li><a href="#contact">CBRE海外淘金</a></li>
+                <li><%= link_to '物件特色', controller: "posts", action: "case" %></li>
+                <li><%= link_to '執行單位', controller: "posts", action: "cbre" %></li>
+              </ul>
+              <a href="#" class="toggle-menu visible-sm visible-xs"><i class="fa fa-bars"></i></a> </div>
+            <!-- /.main-menu --> 
+          </div>
+          <!-- /.row --> 
+        </div>
+        <!-- /#menu-wrapper -->
+        <div class="menu-responsive hidden-md hidden-lg">
+          <ul>
+            <li class="active"><%= link_to '首頁', controller: "posts", action: "index" %></li>
+            <li><%= link_to '線上報名', controller: "posts", action: "index", anchor: "services" %></li>
+            <li><a href="#contact">CBRE海外淘金</a></li>
+            <li><%= link_to '案件介紹', controller: "posts", action: "case" %></li>
+            <li><%= link_to '執行單位', controller: "posts", action: "cbre" %></li>
+          </ul>
+        </div>
+        <!-- /.menu-responsive --> 
+      </div>
+      <!-- /.container --> 
+    </div>
+    <!-- /.main-header --> 
+  </div>
+  <!-- /.site-header -->
+  <div class="site-slider" style="min-height:600px;">
+    <div class="slider">
+      <div class="flexslider">
+        <ul class="slides">
+          <li>
+            <div class="overlay"></div>
+            <%= image_tag("Axis_overall_cam_1_01.jpg", size: "890x500") %>
+            <div class="slider-caption visible-md visible-lg">
+              <h2>世邦魏理仕-海外投資不動產說明會 <br>
+              </h2>
+           <p>一個最靠近海洋的夢想 <br> 
+		  
+		  輕鬆入主紐西蘭首府 <br>  
+
+		  投資金融中心地帶景觀時尚寓所的最好機會</p>
+            
+               
+                <p>步行6分鐘即達CRL城市鐵路Aotea車站<br>  
+距離自行車道及步行道450米</p>
+               
+               
+               <p>輕鬆享受市中心便利發展的樂活生活</p>
+          
+               
+
+              <!-- <a href="#" class="slider-btn">Responsive Template</a> --> 
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- /.flexslider --> 
+    </div>
+    <!-- /.slider --> 
+  </div>
+  <!-- /.site-slider --> 
+</div>
+<!-- /.site-main -->
+<div class="content-section">
+  <div class="container">
+    <div class="row img-space">
+      <div class="hidden-xs col-md-4 col-sm-12"> <%= image_tag("thumb-001.jpg",class:"img-responsive") %> </div>
+      <!-- /.col-md-3 -->
+      <div class="hidden-xs col-md-4 col-sm-12"> <%= image_tag("thumb-002.jpg",class:"img-responsive") %> </div>
+      <!-- /.col-md-3 -->
+      <div class="hidden-xs col-md-4 col-sm-12"> <%= image_tag("thumb-003.jpg",class:"img-responsive") %> </div>
+      <!-- /.col-md-3 --> 
+    </div>
+  </div>
+</div>
+<div class="content-section" id="services">
+  <div class="container">
+    <div class="row">
+      <div class="heading-section col-md-12 text-center">
+        <h2>The Vincent 世邦魏理仕-海外投資不動產說明會</h2>
+        <p>請填寫以下資料 
+          <!-- /.heading-section --> 
+        </p>
+      </div>
+    </div>
+    <!-- /.row -->
+    <div class="col-md-5 col-sm-6">
+      <div class="contact-form">
+        <form method="post" name="contactform" id="contactform">
+          <fieldset>
+            <p>
+              <label>展銷會活動時間：<br>11/12下午02:00~04:30(13:30開始入場)<br>
+                                      11/13下午02:00~04:30(13:30開始入場)
+			  </label>
+              
+              <label>展銷會活動地點：宏泰金融大樓 16樓 E室 </label>
+              <label>台北市民生東路三段156號</label>
+            </p>
+            <p>&nbsp;</p>
+<p>更多資訊，敬請聯繫 </p>
+            <p>吳佳航（Abby Wu）</p>
+            <p>Phone:<a href="mailto:abby.wu@cbre.com">+886 -2-7706-9533</a><br>
+              Email: <a href="mailto:abby.wu@cbre.com">abby.wu@cbre.com</a> <br>
+              <label for="user_name">姓名:</label>
+              <input type="text" id="name" name="user_name" placeholder="請填寫中文姓名">
+
+              <label for="gender">性別：</label>
+              <input name="gender" value="男" type="radio">
+              <label class="light">男</label>
+              <input name="gender" value="女" type="radio">
+              <label class="light">女</label>
+
+              <label for="echelon">場次：</label>
+              <input name="echelon" value="11/12日場次" type="radio">
+              <label class="light">11/12日場次</label>
+              <input name="echelon" value="11/13日場次" type="radio">
+              <label class="light">11/13日場次</label>
+			       <label for="age">年齡：</label>
+              <input name="age" value="21歲~30歲" type="radio">
+              <label class="light">21歲~30歲</label>
+
+              <input name="age" value="31歲~40歲" type="radio">
+              <label class="light">31歲~40歲</label>
+
+              <input name="age" value="41歲~50歲" type="radio">
+              <label class="light">41歲~50歲</label>
+
+              <input name="age" value="51歲以上" type="radio">
+              <label class="light">50歲以上</label>
+
+
+              <label for="favorite">對喜好投資國家：</label>
+              <input id="jp" class="favorite" value="日本" type="checkbox">
+              <label class="light">日本</label>
+
+              <input id="eng" class="favorite" value="英國" type="checkbox">
+              <label class="light">英國</label>
+
+              <input id="thai" class="favorite" value="泰國"  type="checkbox">
+              <label class="light">泰國</label>
+
+              <input id="maly" class="favorite" value="馬來西亞" type="checkbox">
+              <label class="light">馬來西亞</label>
+
+              <input id="combo" class="favorite" value="柬埔寨" type="checkbox">
+              <label class="light">柬埔寨</label>
+
+
+              <label for="phone">手機：</label>
+              <input type="text" id="phone" name="number" placeholder="0912345678">
+              <label for="mail">Email：</label>
+              <input type="email" id="mail" name="email" placeholder="test@test.com.tw">
+            </p>
+
+            <div style="display:none;">
+              <%= form_for @post do |f| %>
+                <%= f.text_field :name %>
+                <%= f.text_field :gender %>
+                <%= f.text_field :echelon %>
+                <%= f.text_field :age %>
+                <%= f.text_field :favorite %>
+                <%= f.text_field :mobile %>
+                <%= f.text_field :email %>
+                <%= f.submit(id:"sumbitRealbtn") %>
+              <% end %>
+            </div>
+          </fieldset> <a class="final" id="sumbitbtn" href="#">確認送出</a>
+          <!-- ←送出表單彈跳頁面 --> 
+          <!-- <button type="submit">確認送出</button> -->
+        </form>
+      </div>
+      <!-- /.contact-form --> 
+    </div>
+    <!-- /.col-md-5 -->
+    <div class="col-md-7 col-sm-6">
+      <ul class="contact-info">
+        <h5 class="text-center">活動流程</h5>
+        <li>活動 rundown</li>
+        <li>1330-1400 活動報到</li>
+        <li>1400-1405 開場 </span></li>
+        <li>1405-1425 馬來西亞伊斯干達市場介紹</li>
+        <li>1425-1450 UMLand建案介紹</li>
+        <li>1450-1630 咨詢時間</li>
+      </ul>
+      <div class="googlemap-wrapper">
+        <div id="map_canvas" class="map-canvas">
+        </div>
+      </div>
+      <!-- spacing for mobile viewing --> 
+    </div>
+    <!-- /.col-md-7 --> 
+  </div>
+</div>
+<!-- /.container -->
+<div class="content-section" id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="heading-section col-md-12 text-center">
+        <h2>The Vincent 世邦魏理仕-海外投資不動產說明會</h2>
+        <p>總價NT608萬起 前五年保證回報6% <br>
+          第六年起可分享酒店式公寓總盈餘45%</p>
+      </div>
+      <!-- /.heading-section -->
+      <div class="col-md-12 col-sm-12 text-left">
+       莎馬美迪尼酒店式公寓緊鄰新加坡，提供一個”零煩惱”的房產投資概念，不用擔心未來出租管理問題，由莎瑪直營即可坐享飯店營收，<br>
+        週邊為鷹閣醫院及國際大學城，對面是亞洲唯一樂高樂園，深具增值潛力。
+      </div>
+      <!-- /.col-md-8 --> 
+    </div>
+    <!-- /.row -->
+    <div class="col-md-12 text-center">
+      <div class="skills-heading">
+        <h3 class="skills-title">歷年說明會實況照片</h3>
+        <p class="small-text">世邦魏理仕海外淘金</p>
+      </div>
+    </div>
+    <!-- /.col-md-12 -->
+    <div class="row">
+      <div class="portfolio-item col-md-4 col-sm-6">
+        <div class="portfolio-thumb"> <%= image_tag("p1.jpg") %>
+          <div class="portfolio-overlay">
+            <h3>CBRE</h3>
+            <p>世邦魏理仕海外淘金</p>
+            <%= link_to(raw("<i class='fa fa-search'></i>"), image_path("p1.jpg"),rel:"lightbox" ,class:"expand") %>
+          </div>
+          <!-- /.portfolio-overlay --> 
+        </div>
+        <!-- /.portfolio-thumb --> 
+      </div>
+      <!-- /.portfolio-item -->
+      <div class="portfolio-item col-md-4 col-sm-6">
+        <div class="portfolio-thumb"> <%= image_tag("p2.jpg") %>
+          <div class="portfolio-overlay">
+            <h3>CBRE</h3>
+            <p>世邦魏理仕海外淘金</p>
+            <%= link_to(raw("<i class='fa fa-search'></i>"), image_path("p2.jpg"),rel:"lightbox" ,class:"expand") %>
+          </div>
+          <!-- /.portfolio-overlay --> 
+        </div>
+        <!-- /.portfolio-thumb --> 
+      </div>
+      <!-- /.portfolio-item -->
+      <div class="portfolio-item col-md-4 col-sm-6">
+        <div class="portfolio-thumb"> <%= image_tag("p3.jpg") %>
+          <div class="portfolio-overlay">
+            <h3>CBRE</h3>
+            <p>世邦魏理仕海外淘金</p>
+            <%= link_to(raw("<i class='fa fa-search'></i>"), image_path("p3.jpg"),rel:"lightbox" ,class:"expand") %>
+          </div>
+          <!-- /.portfolio-overlay --> 
+        </div>
+        <!-- /.portfolio-thumb --> 
+      </div>
+      <!-- /.portfolio-item --> 
+    </div>
+    <!-- /.row --> 
+  </div>
+  <!-- /.container --> 
+</div>
+<!-- /#contact -->
+<div id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-xs-12 text-left">
+                    <a href="https://www.facebook.com/cbre" target="_blank">facebook</a> |
+                    <a href="http://www.cbre.com.tw/CT/Pages/Home.aspx?redirect=true" target="_blank">CBRE</a> |
+                    <a href="http://www.shama.com/" target="_blank">SHAMA </a> |
+                    <a href="http://www.cbre.com/EN/Pages/legal/disclaimer.aspx" target="_blank">免責聲明 / 使用條款</a> |
+                    <a href="http://www.cbre.com/EN/Pages/legal/privacypolicy.aspx" target="_blank">私隱保護條例</a> |
+                    <a href="http://www.cbre.com.tw/CT/Pages/taiwanprivacypolicy.aspx" target="_blank">台灣隱私政策聲明</a> |
+                    <a href="http://www.cbre.com.tw/CT/Pages/TW_PDPA.aspx" target="_blank">台灣個資維護計畫</a>
+                   <p><span>©2016世邦魏理仕公司。本報告所刊載的資料相信是來自可靠來源，但本公司並未對此資料進行核實，亦不會對資料作出任何保證或陳述。廣告內容有可能會出現錯誤、遺漏、貨價格租金便棟及其他狀況，還有在事前未經通知的銷售、出租、融資或撤回。所有刊載的預測、意見、假設或估計只作例子說明，並不一定代表地產市場的真正現況或未來表現。閣下與閣下之稅務及法律顧問須親自對該物業及交易作出審查。不動產經紀人:陳頌民北市經證字第00917</span></p>
+      </div>
+                
+      <!-- /.text-center -->
+      <div class="col-md-4 hidden-xs text-right"> <a href="#top" id="go-top">TOP</a> </div>
+      <!-- /.text-center --> 
+    </div>
+    <!-- /.row --> 
+  </div>
+  <!-- /.container --> 
+</div>
+<!-- /#footer --> 
+<!-- Google Map --> 
+<!-- Google Map Init--> 
+

@@ -1,0 +1,255 @@
+<div class="site-main" id="sTop">
+  <div class="site-header">
+    <div class="main-header">
+      <div class="container">
+        <div id="menu-wrapper">
+          <div class="row">
+            <div class="logo-wrapper col-md-4 col-sm-3 col-xs-8">
+              <h1>&nbsp;</h1>
+            </div>
+            <!-- /.logo-wrapper -->
+            <div class="col-md-8 col-sm-9 col-xs-4 main-menu text-right">
+              <ul class="menu-first hidden-sm hidden-xs">
+                <li class="active"><%= link_to '首頁', controller: "posts", action: "index" %></li>
+                <li><%= link_to '線上報名', controller: "posts", action: "index", anchor: "services" %></li>
+                <li><%= link_to '物件特色', controller: "posts", action: "case" %></li>
+                <li><%= link_to '執行單位', controller: "posts", action: "cbre" %></li>
+              </ul>
+              <a href="#" class="toggle-menu visible-sm visible-xs"><i class="fa fa-bars"></i></a> </div>
+            <!-- /.main-menu -->
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /#menu-wrapper -->
+        <div class="menu-responsive hidden-md hidden-lg">
+          <ul>
+            <li class="active"><%= link_to '首頁', controller: "posts", action: "index" %></li>
+            <li><%= link_to '線上報名', controller: "posts", action: "index", anchor: "services" %></li>
+            <li><a href="#services">SHAMA</a></li>
+            <li><a href="#contact">物件特色</a></li>
+            <li><%= link_to '案件介紹', controller: "posts", action: "case" %></li>
+            <li><%= link_to '執行單位', controller: "posts", action: "cbre" %></li>
+          </ul>
+        </div>
+        <!-- /.menu-responsive -->
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.main-header -->
+  </div>
+  <!-- /.site-header -->
+  <div class="site-slider">
+    <div class="slider">
+      <div class="flexslider">
+        <ul class="slides">
+          <li>
+            <div class="overlay"></div>
+            <%= image_tag("Axis-location-map-lion-city.jpg") %>
+            <div class="slider-caption visible-md visible-lg">
+              <h2>世邦魏理仕-海外投資不動產說明會</h2>
+           <p>一個最靠近海洋的夢想 <br> 
+		  
+		  輕鬆入主紐西蘭首府 <br>  
+
+		  投資金融中心地帶景觀時尚寓所的最好機會</p>
+            
+               
+                <p>步行6分鐘即達CRL城市鐵路Aotea車站<br>  
+距離自行車道及步行道450米</p>
+               
+               
+               <p>輕鬆享受市中心便利發展的樂活生活</p>
+
+              <!-- <a href="#" class="slider-btn">Responsive Template</a> -->
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- /.flexslider -->
+    </div>
+    <!-- /.slider -->
+  </div>
+  <!-- /.site-slider -->
+</div>
+<!-- /.site-main -->
+<div class="content-section">
+  <div class="container">
+    <div class="row">
+      <div class="portfolio-item col-md-4 col-sm-12">
+        <div class="portfolio-thumb"> <%= image_tag("thumb-001.jpg") %>
+          <div class="portfolio-overlay">
+            <h3>CBRE</h3>
+            <p>世邦魏理仕海外掏金</p>
+            <%= link_to(raw("<i class='fa fa-search'></i>"), image_path( "thumb-001.jpg"),rel:"lightbox" ,class:"expand") %> </div>
+          <!-- /.portfolio-overlay -->
+        </div>
+        <!-- /.portfolio-thumb -->
+      </div>
+      <!-- /.portfolio-item -->
+      <div class="portfolio-item col-md-4 col-sm-12">
+        <div class="portfolio-thumb"> <%= image_tag("thumb-002.jpg") %>
+          <div class="portfolio-overlay">
+            <h3>CBRE</h3>
+            <p>世邦魏理仕海外掏金</p>
+            <%= link_to(raw("<i class='fa fa-search'></i>"), image_path( "thumb-002.jpg"),rel:"lightbox" ,class:"expand")%> </div>
+          <!-- /.portfolio-overlay -->
+        </div>
+        <!-- /.portfolio-thumb -->
+      </div>
+      <!-- /.portfolio-item -->
+      <div class="portfolio-item col-md-4 col-sm-12">
+        <div class="portfolio-thumb"> <%= image_tag("thumb-003.jpg") %>
+          <div class="portfolio-overlay">
+            <h3>CBRE</h3>
+            <p>世邦魏理仕海外掏金</p>
+            <%= link_to(raw("<i class='fa fa-search'></i>"), image_path( "thumb-003.jpg"),rel:"lightbox" ,class:"expand")%> </div>
+          <!-- /.portfolio-overlay -->
+        </div>
+        <!-- /.portfolio-thumb -->
+      </div>
+      <!-- /.portfolio-item -->
+    </div>
+  </div>
+</div>
+<div class="content-section" id="services">
+  <div class="container">
+    <div class="row">
+      <div class="heading-section col-md-12 text-center">
+        <h2>The Vincent 世邦魏理仕</h2>
+        <p><!-- /.heading-section --> 海外投資不動產說明會</p>
+      </div>
+      <div class="col-md-12 col-sm-12 text-left">
+        <p><br>
+
+房地產一直都是高資產投資者首選的投資標的，自2001年成立至今，莎瑪酒店式公寓在香港、中國及泰國各主要商業及住宅地段已有10個項目，相應於亞太區旅遊及商業的蓬勃發展，莎瑪美迪尼看好馬來西亞柔佛區的未來發展潛力，銳意發展成為新馬第一的酒店式公寓管理品牌，莎瑪美迪尼將是您的另一精明投資選擇。</p>
+      </div>
+      <!-- /.col-md-8 -->
+    </div>
+    <!-- /.row -->
+  </div>
+  <!-- /.container -->
+</div>
+<!-- /#portfolio -->
+<div class="content-section" id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="heading-section col-md-12 text-center">
+        <h2>物件特色</h2>
+        <p>about SHAMA</p>
+      </div>
+      <!-- /.heading-section -->
+    </div>
+    <!-- /.row -->
+    <div class="row">
+      <div class="portfolio-item col-md-4 col-sm-12">
+        <div class="portfolio-thumb"> <%= image_tag("thumb-004.jpg") %>
+          <div class="portfolio-overlay">
+            <h3>CBRE</h3>
+            <p>世邦魏理仕海外掏金</p>
+            <%= link_to(raw("<i class='fa fa-search'></i>"), image_path( "thumb-004.jpg"),rel:"lightbox" ,class:"expand") %> </div>
+          <!-- /.portfolio-overlay -->
+        </div>
+        <!-- /.portfolio-thumb -->
+      </div>
+      <!-- /.portfolio-item -->
+      <div class="portfolio-item col-md-4 col-sm-12">
+        <div class="portfolio-thumb"> <%= image_tag("thumb-006.jpg") %>
+          <div class="portfolio-overlay">
+            <h3>CBRE</h3>
+            <p>世邦魏理仕海外掏金</p>
+            <%= link_to(raw("<i class='fa fa-search'></i>"), image_path( "thumb-006.jpg"),rel:"lightbox" ,class:"expand") %> </div>
+          <!-- /.portfolio-overlay -->
+        </div>
+        <!-- /.portfolio-thumb -->
+      </div>
+      <!-- /.portfolio-item -->
+      <div class="portfolio-item col-md-4 col-sm-12">
+        <div class="portfolio-thumb"> <%= image_tag("thumb-005.jpg") %>
+          <div class="portfolio-overlay">
+            <h3>CBRE</h3>
+            <p>世邦魏理仕海外掏金</p>
+            <%= link_to(raw("<i class='fa fa-search'></i>"), image_path( "thumb-005.jpg"),rel:"lightbox" ,class:"expand") %> </div>
+          <!-- /.portfolio-overlay -->
+        </div>
+        <!-- /.portfolio-thumb -->
+      </div>
+      <!-- /.portfolio-item -->
+    </div>
+    <!-- /.row -->
+    <div class="row">
+      <div class="col-md-12">
+        <ul class="contact-info">
+
+          <li>區域：MEDINI(美迪尼特區)</li>
+          <li>類型：精品酒店式公寓</li>
+          <li>總樓層：20層層</li>
+          <li>總戶數：213戶</li>
+          <li>開發商：馬來西亞建商(UMLand Medini Lakeside Development SdnBhd)</li>
+          <li>產權：地上權99年+30年</li>
+          <li>預計完工：2018年第三季</li><br>
+<br>
+      <div class="heading-section col-md-12 text-center">
+        <h2>物件位置</h2>
+        <p>Location Map</p>
+      </div>
+		      <%= image_tag("Map - shama.jpg", class: "img-responsive") %>><br>
+<br>
+
+
+<li>
+            <h6>房型與坪數</h6>
+            <p>套房:	16.38坪
+</p>
+          </li>
+          <li>
+            <p>1房:	20.69坪</p>
+          </li>
+          <li>
+            <p>2房:	24.27坪</p>
+          </li>
+          <li>
+            <p>雙鑰匙:	33.50坪</p>
+          </li>
+          <li>
+            <p>3房:	44.96坪/49.14坪/25.62坪</p>
+          </li>
+        </ul>
+        <p>公共設施:<br>
+					SHAMA小酒館，屋頂餐廳，
+					健身房，兒童遊樂場，兒童水上遊樂
+					區，室外展區，游泳池和祈禱室</p>
+        <!-- spacing for mobile viewing -->
+      </div>
+      <!-- /.col-md-7 -->
+    </div>
+    <!-- /.row -->
+  </div>
+  <!-- /.container -->
+</div>
+<!-- /#contact -->
+<div id="footer">
+  <div class="container">
+    <div class="row">
+     <div class="col-md-8 col-xs-12 text-left">
+                    <a href="https://www.facebook.com/cbre" target="_blank">facebook</a> |
+                    <a href="http://www.cbre.com.tw/CT/Pages/Home.aspx?redirect=true" target="_blank">CBRE</a> |
+                    <a href="http://www.shama.com/" target="_blank">SHAMA </a> |
+                    <a href="http://www.cbre.com/EN/Pages/legal/disclaimer.aspx" target="_blank">免責聲明 / 使用條款</a> |
+                    <a href="http://www.cbre.com/EN/Pages/legal/privacypolicy.aspx" target="_blank">私隱保護條例</a> |
+                    <a href="http://www.cbre.com.tw/CT/Pages/taiwanprivacypolicy.aspx" target="_blank">台灣隱私政策聲明</a> |
+                    <a href="http://www.cbre.com.tw/CT/Pages/TW_PDPA.aspx" target="_blank">台灣個資維護計畫</a>
+                     <p><span>©2016世邦魏理仕公司。本報告所刊載的資料相信是來自可靠來源，但本公司並未對此資料進行核實，亦不會對資料作出任何保證或陳述。廣告內容有可能會出現錯誤、遺漏、貨價格租金便棟及其他狀況，還有在事前未經通知的銷售、出租、融資或撤回。所有刊載的預測、意見、假設或估計只作例子說明，並不一定代表地產市場的真正現況或未來表現。閣下與閣下之稅務及法律顧問須親自對該物業及交易作出審查。不動產經紀人:陳頌民北市經證字第00917</span></p>
+                </div>
+      <!-- /.text-center -->
+      <div class="col-md-4 hidden-xs text-right"> <a href="#top" id="go-top">TOP</a> </div>
+      <!-- /.text-center -->
+    </div>
+    <!-- /.row -->
+  </div>
+  <!-- /.container -->
+</div>
+<!-- /#footer -->
+<!--
+Flex Template
+http://www.templatemo.com/preview/templatemo_406_flex
+-->
