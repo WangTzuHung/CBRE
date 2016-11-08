@@ -15,6 +15,7 @@ Rails.application.routes.draw do
   get '/cbre', to: 'posts#cbre'
   get '/final', to: 'posts#final'
   post '/create', to: 'posts#create'
+  get '/all_vistor_list', to:'posts#list'
   resources :posts, only: [:new, :show]
   # Example resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products

@@ -1,0 +1,55 @@
+
+<div class='row'>
+  <div class='col-md-1'>
+    <p>流水號</p>
+  </div>
+  <div class='col-md-1'>
+    <p>姓 名</p>
+  </div>
+  <div class='col-md-1'>
+    <p>性別</p>
+  </div>
+  <div class='col-md-1'>
+    <p>場次</p>
+  </div>
+  <div class='col-md-1'>
+    <p>年齡</p>
+  </div>
+  <div class='col-md-1'>
+    <p>喜好投資國家</p>
+  </div>
+  <div class='col-md-1'>
+    <p>手機</p>
+  </div>
+  <div class='col-md-1'>
+    <p>Email</p>
+  </div>
+</div>
+<% @post.each do |post| %>
+<div class='row'>
+  <div class='col-md-1'>
+    <p><%= post.id %></p>
+  </div>
+  <div class='col-md-1'>
+    <p><%= post.name %></p>
+  </div>
+  <div class='col-md-1'>
+    <p><%= post.gender %></p>
+  </div>
+  <div class='col-md-1'>
+    <p><%= post.echelon %></p>
+  </div>
+  <div class='col-md-1'>
+    <p><%= post.age %></p>
+  </div>
+  <div class='col-md-1'>
+    <p><%= post.favorite %></p>
+  </div>
+  <div class='col-md-1'>
+    <p><%= post.mobile %></p>
+  </div>
+  <div class='col-md-1'>
+    <p><%= post.email %></p>
+  </div>
+</div>
+<% end %>
