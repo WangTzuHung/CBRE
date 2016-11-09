@@ -13,6 +13,5 @@
 //= require ./modernizr-2.6.1-respond-1.1.0.min.js
 //= require ./bootstrap.js
 //= require ./main.js
-//= require ./jquery.gmap3.min.js
 //= require ./plugins.js
 //= require ./index.js

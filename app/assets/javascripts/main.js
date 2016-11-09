@@ -12,7 +12,7 @@ jQuery(document).ready(function($) {
         menuItems = topMenu.find("a"),
         // Anchors corresponding to menu items
         scrollItems = menuItems.map(function(){
-          var item = $($(this).attr("href"));
+          var item = $(this).attr("href");
           if (item.length) { return item; }
         });
 
@@ -72,7 +72,7 @@ jQuery(document).ready(function($) {
     });
 
 
-    $('.toggle-menu').click(function(){
+    $(".toggle-menu").bind("click",function(){
         $('.menu-responsive').slideToggle();
         return false;
     });
