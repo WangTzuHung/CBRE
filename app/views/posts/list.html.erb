@@ -1,55 +1,81 @@
 
 <div class='row'>
   <div class='col-md-1'>
-    <p>流水號</p>
+    <p class="id">流水號</p>
   </div>
   <div class='col-md-1'>
-    <p>姓 名</p>
+    <p class="name">姓 名</p>
   </div>
   <div class='col-md-1'>
-    <p>性別</p>
+    <p class="gender">性別</p>
   </div>
   <div class='col-md-1'>
-    <p>場次</p>
+    <p class="echelon">場次</p>
   </div>
   <div class='col-md-1'>
-    <p>年齡</p>
+    <p class="age">年齡</p>
   </div>
   <div class='col-md-1'>
-    <p>喜好投資國家</p>
+    <p class="favorite">喜好投資國家</p>
   </div>
   <div class='col-md-1'>
-    <p>手機</p>
+    <p class="mobile">手機</p>
   </div>
   <div class='col-md-1'>
-    <p>Email</p>
+    <p class="email">Email</p>
   </div>
 </div>
 <% @post.each do |post| %>
 <div class='row'>
   <div class='col-md-1'>
-    <p><%= post.id %></p>
+    <p class="id"><%= post.id %></p>
   </div>
   <div class='col-md-1'>
-    <p><%= post.name %></p>
+    <p class="name"><%= post.name %></p>
   </div>
   <div class='col-md-1'>
-    <p><%= post.gender %></p>
+    <p class="gender"><%= post.gender %></p>
   </div>
   <div class='col-md-1'>
-    <p><%= post.echelon %></p>
+    <p class="echelon"><%= post.echelon %></p>
   </div>
   <div class='col-md-1'>
-    <p><%= post.age %></p>
+    <p class="age"><%= post.age %></p>
   </div>
   <div class='col-md-1'>
-    <p><%= post.favorite %></p>
+    <p class="favorite"><%= post.favorite %></p>
   </div>
   <div class='col-md-1'>
-    <p><%= post.mobile %></p>
+    <p class="mobile"><%= post.mobile %></p>
   </div>
   <div class='col-md-1'>
-    <p><%= post.email %></p>
+    <p class="email"><%= post.email %></p>
   </div>
 </div>
 <% end %>
+
+<button id="export_csv">Download</button>
+<script type="text/javascript">
+$(function(){
+  $("#export_csv").bind("click",function(event){
+    var data_source = $(".row");
+    var csv_data="";
+    var download_element = document.createElement("a");
+    data_source.each(function(index,value){
+      csv_data += $(this).find(".id").text()+","
+                 +$(this).find(".name").text()+","
+                 +$(this).find(".gender").text()+","
+                 +$(this).find(".echelon").text()+","
+                 +$(this).find(".age").text()+","
+                 +$(this).find(".favorite").text()+","
+                 +$(this).find(".mobile").text()+","
+                 +$(this).find(".email").text()+"\r\n";
+    });
+    download_element.download = "Vistor_list.csv";
+    download_element.href = "data:application/csv;charset=utf-8," + encodeURIComponent(csv_data);
+    download_element.click();
+  });
+
+});
+</script>
+
