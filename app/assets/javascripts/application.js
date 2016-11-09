@@ -15,3 +15,4 @@
 //= require ./main.js
 //= require ./plugins.js
 //= require ./index.js
+//= require ./jquery.gmap3.min.js
